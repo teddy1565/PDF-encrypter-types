@@ -1,5 +1,5 @@
-const IPCValidChannelConst = [
-    "startup_test"
-];
+interface IPCValidChannelMap {
+    startup_test: string;
+}
 
-export type IPCValidChannel = typeof IPCValidChannelConst[number];
+export type IPCValidChannel = keyof IPCValidChannelMap;
