@@ -1,0 +1,22 @@
+{
+  "name": "pdf-encrypter-types",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000D\u0000F\u0000-\u0000e\u0000n\u0000c\u0000r\u0000y\u0000p\u0000t\u0000e\u0000r\u0000-\u0000t\u0000y\u0000p\u0000e\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teddy1565/PDF-encrypter-types.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teddy1565/PDF-encrypter-types/issues"
+  },
+  "homepage": "https://github.com/teddy1565/PDF-encrypter-types#readme",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}
