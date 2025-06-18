@@ -13,17 +13,17 @@ export interface startup_test<T extends IpcMainInvokeEvent> {
 }
 
 export interface select_pdf_file<T extends IpcMainInvokeEvent> {
-    (_ev: T): string | undefined;
+    (_ev: T): Promise<string | undefined>;
 }
 
 export interface select_sqrt_txt_file<T extends IpcMainInvokeEvent> {
-    (_ev: T): string | undefined;
+    (_ev: T): Promise<string | undefined>;
 }
 
 export interface select_output_dir<T extends IpcMainInvokeEvent> {
-    (_ev: T): string | undefined;
+    (_ev: T): Promise<string | undefined>;
 }
 
-export interface exec_encrypt<T extends IpcMainInvokeEvent> {
-    (_ev: T, pdf_file_path: string, sqrt_txt_file_path: string, output_dir_path: string, encode_type: keyof EncodeType): Promise<boolean>;
+export interface exec_encrypt<T extends IpcMainInvokeEvent, U extends keyof EncodeType> {
+    (_ev: T, pdf_file_path: string, sqrt_txt_file_path: string, output_dir_path: string, encode_type: U): Promise<boolean>;
 }
